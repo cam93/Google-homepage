@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<title>Google Homepage</title>
 <!--this is here to link to my personal documents -->	
 <link rel= "stylesheet" href="google_style.css">
 
@@ -20,34 +22,39 @@
 <title> Google </title>
 
   <div class="google">
-<img ; a href="#" alt="Google" height="92" id="hplogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+<img ; a href="#" alt="Google" height="92" width= "272" id="hplogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
     </div>
   
-<!-- adds the search bar -->              
-<div class="nav" id= "searchform">
-	<form class="search" action="search" style="overflow:visible" id="search" method="GET" role="search">
+<!-- adds the search bar -->
 
-  <input type="search" class="corner" placeholder="" results="0" size= 55>  
-  </div>
-
-<!-- adds buttons -->  
-<div class = "buttons">
-  <input type="submit" value="Google Search" id="googleSearch">
-  <input type="submit" value="I'm Feeling Lucky" id="imFeelingLucky">
-</div> 
-
-<footer>
-  <ul class="footerLeft" id="footer1">
-    <li class="footerL" id="footLink" style="float:left"><a href="advertising.asp">Advertising</a></li>
-    <li class="footerL" id="footLink" ><a href="business.asp">Business</a></li>
-    <li class="footerL" id="footLink"><a href="howSearchWorks.asp">How Search Works</a></li>
-  </ul>
-  <ul class="footerRight" id="footer2">
-    <li class="footerR" id="footlink" style="float:right"><a href="settings.asp">Settings</a></li>
-    <li class="footerR" id="footlink" style="float:right"><a href="term.asp">Terms</a></li>
-    <li class="footerR" id="footlink" style="float:right"><a href="privacy.asp">Privacy</a></li>
-  </ul>
-</footer>
-  
+  <div class="searchform">
+    <div role="search" class="form">
+          
+ <svg class="searchIcon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                </path>
+ </svg>
+<input class="queryInput" name="q" type="text" role="combobox" autocomplete="off" title="Search"
+                maxlength="2048">
+</div>
+    
+<!-- adding the search buttons-->    
+  <div class="searchButtons" role="button">
+        <input class="searchButton" value="Google Search" area-label="Google Search">
+        <input class="L_button" value="I'm Feeling Lucky" area-label="I'm Feeling Lucky">
+   </div> 
 </body>
+    
+<!-- adding the footer -->
+<div class="footer">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search works</a>
+        <div class="priv_term_set">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+ </div>
+  </footer>
 </html>
