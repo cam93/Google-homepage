@@ -1,20 +1,18 @@
-<!-- google style sheet css -->
+html, body{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
 
-html{
-  width:100%;
-  height:100%;
-  box-sizing:border-box;
-} 
-
-.body{
-  position:relative;
+#body{
+  position: relative;
   min-height: 100%;
 }
 
 *,
-*:before,
-*:after{
-  box-sizing:inherit;
+*: before,
+*: after{
+  box-sizing: inherit;
 }
 
 .navBar {
@@ -25,24 +23,21 @@ html{
 
 .navLink {
   display: inline;
-  width:50px;
   color: #000000;
-  font:13px arial;
+  font: 13px;
+  padding:5px 10px;
+  margin: 0 5px 0 5px;
 }
 
 a{
   text-decoration: none;
-  color:inherit;
-}
-
-li.navLink a:hover{
- text-decoration:underline; 
+  color: inherit;
 }
 
 .google {
   text-align: center;
   display: block;
-  padding-top: 120px; 
+  padding-top: 120px;
 }
 
 .searchform {
@@ -58,7 +53,7 @@ li.navLink a:hover{
   border-radius: 30px;
   border: 1px solid #dfe1e5;
   height: 44px;
-  margin-right:-375px;
+  margin-right: -375px;
 }
 
 .form:hover {
@@ -93,8 +88,8 @@ li.navLink a:hover{
   padding-top: 70px;
   display: flex;
   height: 70px;
-  font:14 arial;
-  text-align:left;
+  font: 14;
+  text-align: left;
 }
 
 .searchButton {
@@ -132,12 +127,12 @@ li.navLink a:hover{
   height: 36px;
   box-sizing: border-box;
   cursor: pointer;
-  min-width:54px;
+  min-width: 54px;
 }
 
 .L_button:hover{
-  color:#000;
-  border-color:#000;
+  color: #000;
+  border-color: #000;
 }
 
 .footer {
@@ -150,24 +145,30 @@ li.navLink a:hover{
   border-top-width: 1px;
   border-top-color: #e4e4e4;
   border-top-style: solid;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
+  bottom: 0;
+  right: 0;
+  left: 0;
   position: absolute;
   margin-left: -27px;
-  color:#5f6368;
+  margin-top: -100;
+  color: #5f6368;
+  height: -100%;
 }
 
 .footer a {
   padding-left: 27px;
   text-decoration: none;
-  color:#5f6368;
+  color: #5f6368;
   display: inline-block;
   white-space: nowrap;
 }
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+li.navLink a:hover{
+ text-decoration: underline;
 }
 
 .priv_term_set {
